@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Sparkle; 
+  src: url(..fonts/abeakrg.ttf);
+} 
+
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+
+body{
+  background-color: rgb(45, 233, 214);
+}
+
+#container{
+  background-color: white;
+  width: 95%;
+  height: auto;
+  margin: 30px auto;
+  box-shadow: 0 0 6px 4px rgb(167, 156, 156) ;
+}
+
+
+nav{
+  background-color: #700202;
+  /* background-color: rgb(238, 34, 34); */
+  width: 100%;
+  padding: 11px;
+  border-bottom: 7px solid #e64946;
+  
+}
+
+ul{
+  list-style-type: none ;
+  padding: 0;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+nav li{
+  display: inline;
+  margin: 2px 5px;
+  padding: 11px;
+  border-right: 1px solid rgb(219, 73, 73);
+  margin: -4px;
+
+
+}
+
+nav li:hover{
+background-color: #e64946; ;
+
+}
+
+nav li:last-child{
+  border-right: none;
+}
+
+#latest{
+  display: grid;
+  grid-template-columns: auto auto;
+
+ 
+}
+
+.album{
+  display: grid;
+  grid-template-columns: auto auto;
+
+  
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  border:1px solid white;
+}
+
+top{
+  height: 89%;
+}
+
+.title,.date {
+  position:relative ;
+  top: -180px;
+  left: 10px;
+  color: white;
+}
+
+.title{
+  background-color: #700202;
+  padding: 20px;
+  width: 80%;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.date{
+  background-color: #e64946;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  margin-top:5px ;
+  font-family: Tahoma;
+
+}
+#latest > div:hover,
+.album > div:hover {
+  filter: brightness(1.2);
+  cursor:pointer; 
+  transform: scale(.99);
+
+}
+article{
+  padding:20px;
+}
+article p{
+ font-family: 'Gill Sans',  sans-serif;
+ font-size: larger;
+ text-align: justify;
+}
+
+blockquote{
+  border-radius: 2px;
+  background: grey;
+  margin:5%;
+  padding:5px;
+}
+
+
+
+
+
